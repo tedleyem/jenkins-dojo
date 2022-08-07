@@ -46,20 +46,20 @@ The files inside the kuberenetes dir can be used to apply jenkins and a jenkins 
 run the following commands in order. 
 
 ```
-$ cd kuberenetes/
+cd kuberenetes/
 ```
 **All at once:**
 ```
-$ kubectl apply -f jenkins-service.yaml,jenkins-deployment.yaml,jenkins-claim0-persistentvolumeclaim.yaml,jenkins-claim1-persistentvolumeclaim.yaml,jenkins-claim2-persistentvolumeclaim.yaml
+kubectl apply -f jenkins-service.yaml,jenkins-deployment.yaml,jenkins-claim0-persistentvolumeclaim.yaml,jenkins-claim1-persistentvolumeclaim.yaml,jenkins-claim2-persistentvolumeclaim.yaml
 ```
 
 **Or one at at time:** 
 ```
-$ kubectl apply -f jenkins-service.yaml
-$ kubectl apply -f jenkins-deployment.yaml
-$ kubectl apply -f jenkins-claim0-persistentvolumeclaim.yaml
-$ kubectl apply -f jenkins-claim1-persistentvolumeclaim.yaml
-$ kubectl apply -f jenkins-claim2-persistentvolumeclaim.yaml
+kubectl apply -f jenkins-service.yaml
+kubectl apply -f jenkins-deployment.yaml
+kubectl apply -f jenkins-claim0-persistentvolumeclaim.yaml
+kubectl apply -f jenkins-claim1-persistentvolumeclaim.yaml
+kubectl apply -f jenkins-claim2-persistentvolumeclaim.yaml
 ```
 
 # Check Service with minikube
