@@ -47,11 +47,14 @@ run the following commands in order.
 
 ```
 $ cd kuberenetes/
-
+```
 **All at once:**
+```
 $ kubectl apply -f jenkins-service.yaml,jenkins-deployment.yaml,jenkins-claim0-persistentvolumeclaim.yaml,jenkins-claim1-persistentvolumeclaim.yaml,jenkins-claim2-persistentvolumeclaim.yaml
+```
 
 **Or one at at time:** 
+```
 $ kubectl apply -f jenkins-service.yaml
 $ kubectl apply -f jenkins-deployment.yaml
 $ kubectl apply -f jenkins-claim0-persistentvolumeclaim.yaml
