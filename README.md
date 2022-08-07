@@ -46,7 +46,7 @@ The files inside the kuberenetes dir can be used to apply jenkins and a jenkins 
 run the following commands in order. 
 
 ```
-cd kuberenetes/
+cd kuberenetes
 ```
 **All at once:**
 ```
