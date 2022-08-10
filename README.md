@@ -5,6 +5,17 @@ using docker-compose, kubernetes, terraform, and provision Jenkins
 for development/test cases. 
  This has not been tested for Production Usage.
 
+## Devops Workflow 
+
+One of the most practical steps in Devops Practices are listed below: 
+
+```
+    1.) An engineer merges their code to master.
+    2.) A Jenkins build is triggered that lints, tests, and builds the entire application.
+    3.) The built application is then deployed to a QA environment.
+    4.) End-2-End (E2E) tests are run against the QA environment.
+    5.) The application is deployed to production. If it’s a CICD flow this occurs automatically if E2E tests pass, otherwise this would be a manual deployment.
+```
 
 ## DOCKER (docker-compose)
 - Setup: To spin up jenkins using docker compose, you can run the following command
